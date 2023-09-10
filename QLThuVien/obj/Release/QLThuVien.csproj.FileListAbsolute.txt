@@ -1,0 +1,8 @@
+c:\users\admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\bin\Release\QLThuVien.exe.config
+c:\users\admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\bin\Release\QLThuVien.exe
+c:\users\admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\bin\Release\QLThuVien.pdb
+c:\users\admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\obj\Release\QLThuVien.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\obj\Release\QLThuVien.Properties.Resources.resources
+c:\users\admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\obj\Release\QLThuVien.csproj.GenerateResource.Cache
+c:\users\admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\obj\Release\QLThuVien.exe
+c:\users\admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\obj\Release\QLThuVien.pdb
