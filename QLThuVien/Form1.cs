@@ -40,14 +40,23 @@ namespace QLThuVien
                 //Neu sai
             else
             {
-                DialogResult result = MessageBox.Show("Sai tài khoản hoặc pass lỗi, nhấn OK để nhận hỗ trợ", "Lỗi", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
-              //  MessageBox.Show("Sai tài khoản hoặc pass lỗi", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                if (result == System.Windows.Forms.DialogResult.OK)
-                {
-                    System.Diagnostics.Process.Start("http://fb.com/phong23alpha");
-                }
+               
+               MessageBox.Show("Sai tài khoản hoặc pass lỗi, vui lòng nhấn (Không đăng nhập được) để được hỗ trợ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+               
             }
 
         }
+        //Sự kiện nút thoát
+        private void lbExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        //Sự kiện nhấn nút support
+        private void lbSupport_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://fb.com/phong23alpha");
+        }
+
+      
     }
 }

@@ -28,48 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
+            this.txtLogIN = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtLogIN = new System.Windows.Forms.Button();
+            this.lbSupport = new System.Windows.Forms.Label();
+            this.lbExit = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(156, 72);
+            this.txtUser.Location = new System.Drawing.Point(179, 195);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(209, 26);
+            this.txtUser.Size = new System.Drawing.Size(220, 26);
             this.txtUser.TabIndex = 0;
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(156, 122);
+            this.txtPass.Location = new System.Drawing.Point(179, 261);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(209, 26);
+            this.txtPass.Size = new System.Drawing.Size(220, 26);
             this.txtPass.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 78);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Tên đăng nhập";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Mật khẩu";
+            this.txtPass.UseSystemPasswordChar = true;
             // 
             // txtLogIN
             // 
-            this.txtLogIN.Location = new System.Drawing.Point(156, 194);
+            this.txtLogIN.Location = new System.Drawing.Point(260, 321);
             this.txtLogIN.Name = "txtLogIN";
             this.txtLogIN.Size = new System.Drawing.Size(139, 47);
             this.txtLogIN.TabIndex = 4;
@@ -77,19 +65,79 @@
             this.txtLogIN.UseVisualStyleBackColor = true;
             this.txtLogIN.Click += new System.EventHandler(this.txtLogIN_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(123, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 128);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 196);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(145, 25);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Tên đăng nhập";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 262);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 25);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Mật khẩu";
+            // 
+            // lbSupport
+            // 
+            this.lbSupport.AutoSize = true;
+            this.lbSupport.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSupport.ForeColor = System.Drawing.Color.MediumBlue;
+            this.lbSupport.Location = new System.Drawing.Point(12, 334);
+            this.lbSupport.Name = "lbSupport";
+            this.lbSupport.Size = new System.Drawing.Size(206, 22);
+            this.lbSupport.TabIndex = 8;
+            this.lbSupport.Text = "Không đăng nhập được?";
+            this.lbSupport.Click += new System.EventHandler(this.lbSupport_Click);
+            // 
+            // lbExit
+            // 
+            this.lbExit.AutoSize = true;
+            this.lbExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbExit.ForeColor = System.Drawing.Color.Red;
+            this.lbExit.Location = new System.Drawing.Point(401, 9);
+            this.lbExit.Name = "lbExit";
+            this.lbExit.Size = new System.Drawing.Size(37, 36);
+            this.lbExit.TabIndex = 9;
+            this.lbExit.Text = "X";
+            this.lbExit.Click += new System.EventHandler(this.lbExit_Click);
+            // 
             // Form1
             // 
             this.AcceptButton = this.txtLogIN;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(392, 341);
-            this.Controls.Add(this.txtLogIN);
+            this.ClientSize = new System.Drawing.Size(450, 405);
+            this.Controls.Add(this.lbExit);
+            this.Controls.Add(this.lbSupport);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.txtLogIN);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtUser);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,9 +147,12 @@
 
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.Button txtLogIN;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button txtLogIN;
+        private System.Windows.Forms.Label lbSupport;
+        private System.Windows.Forms.Label lbExit;
     }
 }
 
