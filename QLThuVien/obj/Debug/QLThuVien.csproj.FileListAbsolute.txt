@@ -1,1 +1,10 @@
 c:\users\admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\bin\Debug\QLThuVien.exe.config
+C:\Users\Admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\bin\Debug\QLThuVien.exe
+C:\Users\Admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\bin\Debug\QLThuVien.pdb
+C:\Users\Admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\obj\Debug\QLThuVien.Dashboard.resources
+C:\Users\Admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\obj\Debug\QLThuVien.Form1.resources
+C:\Users\Admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\obj\Debug\QLThuVien.Properties.Resources.resources
+C:\Users\Admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\obj\Debug\QLThuVien.csproj.GenerateResource.Cache
+C:\Users\Admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\obj\Debug\QLThuVien.exe
+C:\Users\Admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\obj\Debug\QLThuVien.pdb
+C:\Users\Admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\obj\Debug\QLThuVien.csprojResolveAssemblyReference.cache

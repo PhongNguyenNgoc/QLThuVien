@@ -17,6 +17,11 @@ namespace QLThuVien
             InitializeComponent();
         }
 
+        private void thoatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
        
     }
 }
