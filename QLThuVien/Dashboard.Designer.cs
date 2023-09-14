@@ -79,6 +79,7 @@
             this.thêmSáchMớiToolStripMenuItem.Name = "thêmSáchMớiToolStripMenuItem";
             this.thêmSáchMớiToolStripMenuItem.Size = new System.Drawing.Size(244, 56);
             this.thêmSáchMớiToolStripMenuItem.Text = "Thêm Sách Mới";
+            this.thêmSáchMớiToolStripMenuItem.Click += new System.EventHandler(this.thêmSáchMớiToolStripMenuItem_Click);
             // 
             // xemSáchToolStripMenuItem
             // 

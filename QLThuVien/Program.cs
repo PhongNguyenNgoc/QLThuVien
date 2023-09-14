@@ -15,8 +15,8 @@ namespace QLThuVien
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(true);
-            Application.Run(new Form1());
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Dashboard());
         }
     }
 }

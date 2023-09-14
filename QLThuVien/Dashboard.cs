@@ -22,6 +22,12 @@ namespace QLThuVien
             Application.Exit();
         }
 
+        private void thêmSáchMớiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            themSach tsm = new themSach();
+            tsm.Show();
+        }
+
        
     }
 }

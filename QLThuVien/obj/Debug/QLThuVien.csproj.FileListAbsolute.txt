@@ -8,3 +8,4 @@ C:\Users\Admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\obj\Deb
 C:\Users\Admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\obj\Debug\QLThuVien.exe
 C:\Users\Admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\obj\Debug\QLThuVien.pdb
 C:\Users\Admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\obj\Debug\QLThuVien.csprojResolveAssemblyReference.cache
+C:\Users\Admin\documents\visual studio 2013\Projects\QLThuVien\QLThuVien\obj\Debug\QLThuVien.themSach.resources
