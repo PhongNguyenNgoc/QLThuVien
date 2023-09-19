@@ -28,6 +28,12 @@ namespace QLThuVien
             tsm.Show();
         }
 
+        private void xemSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            xemSach xs = new xemSach();
+            xs.Show();
+        }
+
        
     }
 }

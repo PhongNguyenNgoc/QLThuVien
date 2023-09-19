@@ -64,6 +64,12 @@
     <Compile Include="themSach.Designer.cs">
       <DependentUpon>themSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="xemSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xemSach.Designer.cs">
+      <DependentUpon>xemSach.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,6 +87,9 @@
     </Compile>
     <EmbeddedResource Include="themSach.resx">
       <DependentUpon>themSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xemSach.resx">
+      <DependentUpon>xemSach.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
