@@ -35,3 +35,5 @@ VALUES  ( N'' ,
 
 SELECT * FROM dbo.SachMoi
 DELETE FROM dbo.SachMoi WHERE bID=1
+
+UPDATE dbo.SachMoi SET 
