@@ -21,6 +21,15 @@ CREATE TABLE SachMoi(
 
 )
 
+CREATE TABLE SV(
+MSSV VARCHAR(250) NOT NULL PRIMARY KEY,
+HoTen NVARCHAR(250) NOT NULL,
+NgaySinh VARCHAR(250) NOT NULL,
+Lop VARCHAR(250) NOT NULL,
+KhoaHoc VARCHAR(250) NOT NULL,
+Nganh NVARCHAR(250) NOT NULL
+)
+
 SELECT * FROM dbo.SachMoi
 
 INSERT INTO SachMoi(bTua,bTheLoai,bTacGia,bNXB,bNgayNhap,bGia,bSoLuong)
@@ -32,8 +41,24 @@ VALUES  ( N'' ,
           0 , 
           0  
         )
+INSERT INTO dbo.SachMoi
+        ( bTua ,
+          bTheLoai ,
+          bTacGia ,
+          bNXB ,
+          bNgayNhap ,
+          bGia ,
+          bSoLuong
+        )
+VALUES  ( N'' , -- bTua - nvarchar(250)
+          N'' , -- bTheLoai - nvarchar(250)
+          N'' , -- bTacGia - nvarchar(250)
+          N'' , -- bNXB - nvarchar(250)
+          '' , -- bNgayNhap - varchar(250)
+          0 , -- bGia - bigint
+          0  -- bSoLuong - bigint
+        )
 
-SELECT * FROM dbo.SachMoi
+SELECT * FROM dbo.SV
 DELETE FROM dbo.SachMoi WHERE bID=1
 
-UPDATE dbo.SachMoi SET 

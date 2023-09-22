@@ -105,6 +105,21 @@ namespace QLThuVien
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
+
+            //Lam moi du lieu trong db
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = "data source = DESKTOP-7IUBU0N\\SQLEXPRESS; database=QLTV;integrated security= True";
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+
+            cmd.CommandText = "SELECT * FROM SachMoi";
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+
+            dataGridView1.DataSource = ds.Tables[0];
+            //-------------------------------------
+
             txtTimSach.Clear();
             panel2.Visible = false;
         }
@@ -126,7 +141,7 @@ namespace QLThuVien
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
-                cmd.CommandText = "update SachMoi set bTua='" + bName + "',bTheLoai='" + bType + "',bTacGia='" + bAuthor + "',bNXB='" + bPub + "',bNgayNhap='" + bDate + "',bGia='" + price + "',bSoLuong='" + quan + "' where bID='" + rowid + "'";
+                cmd.CommandText = "update SachMoi set bTua=N'" + bName + "',bTheLoai=N'" + bType + "',bTacGia=N'" + bAuthor + "',bNXB=N'" + bPub + "',bNgayNhap='" + bDate + "',bGia='" + price + "',bSoLuong='" + quan + "' where bID='" + rowid + "'";
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
