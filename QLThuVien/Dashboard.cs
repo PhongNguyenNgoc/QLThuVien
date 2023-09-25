@@ -40,6 +40,12 @@ namespace QLThuVien
             tsv.Show();
         }
 
+        private void xemThôngTinSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            xemThongTinSV xSV = new xemThongTinSV();
+            xSV.Show();
+        }
+
        
     }
 }

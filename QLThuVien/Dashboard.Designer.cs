@@ -117,6 +117,7 @@
             this.xemThôngTinSinhViênToolStripMenuItem.Name = "xemThôngTinSinhViênToolStripMenuItem";
             this.xemThôngTinSinhViênToolStripMenuItem.Size = new System.Drawing.Size(320, 56);
             this.xemThôngTinSinhViênToolStripMenuItem.Text = "Xem Thông Tin Sinh Viên";
+            this.xemThôngTinSinhViênToolStripMenuItem.Click += new System.EventHandler(this.xemThôngTinSinhViênToolStripMenuItem_Click);
             // 
             // mượnSáchToolStripMenuItem
             // 
