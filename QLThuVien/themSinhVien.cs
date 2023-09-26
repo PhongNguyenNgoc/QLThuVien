@@ -36,7 +36,7 @@ namespace QLThuVien
         {
             if (txtMSSV.Text != "" && txtHT.Text != "" && txtLop.Text != "" && txtKhoaHoc.Text != "" && txtNganh.Text != "")
             {
-                String mssv = txtMSSV.Text;
+                Int64 mssv = Int64.Parse(txtMSSV.Text);
                 String ht = txtHT.Text;
                 String ns = dtpNgaySinh.Text;
                 String lop = txtLop.Text;
@@ -49,7 +49,7 @@ namespace QLThuVien
                 cmd.Connection = con;
 
                 con.Open();
-                cmd.CommandText = "INSERT INTO SV( MSSV,HoTen,NgaySinh,Lop,KhoaHoc,Nganh) VALUES ('" + mssv + "',N'" + ht + "','" + ns + "','" + lop + "','" + khoaH + "',N'" + nganh + "')";
+                cmd.CommandText = "INSERT INTO SV( MSSV,HoTen,NgaySinh,Lop,KhoaHoc,Nganh) VALUES ('" + mssv + "',N'" + ht + "',N'" + ns + "','" + lop + "','" + khoaH + "',N'" + nganh + "')";
                 cmd.ExecuteNonQuery();
                 con.Close();
 

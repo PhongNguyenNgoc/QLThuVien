@@ -106,18 +106,8 @@ namespace QLThuVien
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
 
-            //Lam moi du lieu trong db
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = DESKTOP-7IUBU0N\\SQLEXPRESS; database=QLTV;integrated security= True";
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = con;
-
-            cmd.CommandText = "SELECT * FROM SachMoi";
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
-
-            dataGridView1.DataSource = ds.Tables[0];
+           //Lam moi
+            xemSach_Load(this, null);
             //-------------------------------------
 
             txtTimSach.Clear();
@@ -145,6 +135,8 @@ namespace QLThuVien
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
+
+                xemSach_Load(this, null);
             }
             
         }

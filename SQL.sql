@@ -1,4 +1,4 @@
-CREATE DATABASE QLTV
+﻿CREATE DATABASE QLTV
 
 USE QLTV
 
@@ -21,8 +21,9 @@ CREATE TABLE SachMoi(
 
 )
 
+
 CREATE TABLE SV(
-MSSV VARCHAR(250) NOT NULL PRIMARY KEY,
+MSSV BIGINT NOT NULL PRIMARY KEY,
 HoTen NVARCHAR(250) NOT NULL,
 NgaySinh VARCHAR(250) NOT NULL,
 Lop VARCHAR(250) NOT NULL,
@@ -58,7 +59,6 @@ VALUES  ( N'' , -- bTua - nvarchar(250)
           0 , -- bGia - bigint
           0  -- bSoLuong - bigint
         )
+ SELECT * FROM dbo.SV
 
-SELECT * FROM dbo.SV
-DELETE FROM dbo.SachMoi WHERE bID=1
-
+UPDATE dbo.SV SET HoTen ='Nguyễn Văn A',NgaySinh='26 Tha´ng Chi´n 2023', Lop ='s23-62kt', KhoaHoc='2020-2025', Nganh='QTKD ' WHERE MSSV='2503567895'

@@ -36,7 +36,7 @@ namespace QLThuVien
                 cmd.Connection = con;
 
                 con.Open();
-                cmd.CommandText = "INSERT INTO SachMoi(bTua,bTheLoai,bTacGia,bNXB,bNgayNhap,bGia,bSoLuong) VALUES (N'" + bName + "',N'" + bCate + "',N'" + bAuth + "',N'" + bPubl + "','" + bDate + "','" + price + "','" + quan + "')";
+                cmd.CommandText = "INSERT INTO SachMoi(bTua,bTheLoai,bTacGia,bNXB,bNgayNhap,bGia,bSoLuong) VALUES (N'" + bName + "',N'" + bCate + "',N'" + bAuth + "',N'" + bPubl + "',N'" + bDate + "','" + price + "','" + quan + "')";
                 cmd.ExecuteNonQuery();
                 con.Close();
 
