@@ -45,7 +45,28 @@ namespace QLThuVien
             xemThongTinSV xSV = new xemThongTinSV();
             xSV.Show();
         }
+        //Đoạn code chạy đồng hồ theo thời gian thực------------------------------
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+            label1.Text = DateTime.Now.ToLongTimeString();
+            label2.Text = DateTime.Now.ToLongDateString();
+        }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
+        }
+
+        
+        //-------------------------------------------------------
+
+        private void mượnSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            muonSach ms = new muonSach();
+            ms.Show();
+        }
        
     }
 }
