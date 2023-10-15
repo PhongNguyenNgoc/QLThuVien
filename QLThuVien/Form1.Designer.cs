@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
-            this.txtLogIN = new System.Windows.Forms.Button();
+            this.btnLogIN = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -55,15 +55,15 @@
             this.txtPass.TabIndex = 1;
             this.txtPass.UseSystemPasswordChar = true;
             // 
-            // txtLogIN
+            // btnLogIN
             // 
-            this.txtLogIN.Location = new System.Drawing.Point(260, 321);
-            this.txtLogIN.Name = "txtLogIN";
-            this.txtLogIN.Size = new System.Drawing.Size(139, 47);
-            this.txtLogIN.TabIndex = 4;
-            this.txtLogIN.Text = "Đăng nhập";
-            this.txtLogIN.UseVisualStyleBackColor = true;
-            this.txtLogIN.Click += new System.EventHandler(this.txtLogIN_Click);
+            this.btnLogIN.Location = new System.Drawing.Point(260, 321);
+            this.btnLogIN.Name = "btnLogIN";
+            this.btnLogIN.Size = new System.Drawing.Size(139, 47);
+            this.btnLogIN.TabIndex = 4;
+            this.btnLogIN.Text = "Đăng nhập";
+            this.btnLogIN.UseVisualStyleBackColor = true;
+            this.btnLogIN.Click += new System.EventHandler(this.btnLogIN_Click);
             // 
             // pictureBox1
             // 
@@ -123,7 +123,7 @@
             // 
             // Form1
             // 
-            this.AcceptButton = this.txtLogIN;
+            this.AcceptButton = this.btnLogIN;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(450, 405);
@@ -132,7 +132,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txtLogIN);
+            this.Controls.Add(this.btnLogIN);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtUser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -149,7 +149,7 @@
 
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtPass;
-        private System.Windows.Forms.Button txtLogIN;
+        private System.Windows.Forms.Button btnLogIN;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

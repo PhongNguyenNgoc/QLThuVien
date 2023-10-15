@@ -69,28 +69,30 @@ namespace QLThuVien
             if (dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
             {
                 bid =Int64.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+
+                panel2.Visible = true;
+
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = "data source = DESKTOP-7IUBU0N\\SQLEXPRESS; database=QLTV;integrated security= True";
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+
+                cmd.CommandText = "SELECT * FROM SV where MSSV=" + bid + "";
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+
+                rowid = Int64.Parse(ds.Tables[0].Rows[0][0].ToString());
+
+                //Anh xa
+                txtMSSV.Text = rowid.ToString();
+                txtHoTen.Text = ds.Tables[0].Rows[0][1].ToString();
+                txtNS.Text = ds.Tables[0].Rows[0][2].ToString();
+                txtLop.Text = ds.Tables[0].Rows[0][3].ToString();
+                txtKhoa.Text = ds.Tables[0].Rows[0][4].ToString();
+                txtNganh.Text = ds.Tables[0].Rows[0][5].ToString();
             }
-            panel2.Visible = true;
-
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = DESKTOP-7IUBU0N\\SQLEXPRESS; database=QLTV;integrated security= True";
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = con;
-
-            cmd.CommandText = "SELECT * FROM SV where MSSV=" + bid + "";
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
-
-            rowid = Int64.Parse(ds.Tables[0].Rows[0][0].ToString());
-
-            //Anh xa
-            txtMSSV.Text = rowid.ToString();
-            txtHoTen.Text = ds.Tables[0].Rows[0][1].ToString();
-            txtNS.Text = ds.Tables[0].Rows[0][2].ToString();
-            txtLop.Text = ds.Tables[0].Rows[0][3].ToString();
-            txtKhoa.Text = ds.Tables[0].Rows[0][4].ToString();
-            txtNganh.Text = ds.Tables[0].Rows[0][5].ToString();
+            
            
         }
 

@@ -180,9 +180,9 @@
             this.label2.Font = new System.Drawing.Font("Digital", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(2, 144);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(271, 45);
+            this.label2.Size = new System.Drawing.Size(212, 45);
             this.label2.TabIndex = 2;
-            this.label2.Text = "nn Thang Chin 2023";
+            this.label2.Text = "nn Month 2023";
             // 
             // timer1
             // 

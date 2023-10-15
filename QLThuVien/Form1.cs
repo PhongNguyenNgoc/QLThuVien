@@ -18,7 +18,7 @@ namespace QLThuVien
             InitializeComponent();
         }
         //Xu ly su kien nut dang nhap
-        private void txtLogIN_Click(object sender, EventArgs e)
+        private void btnLogIN_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
             con.ConnectionString="data source = DESKTOP-7IUBU0N\\SQLEXPRESS; database=QLTV;integrated security= True";
@@ -39,10 +39,8 @@ namespace QLThuVien
             }
                 //Neu sai
             else
-            {
-               
-               MessageBox.Show("Sai tài khoản hoặc pass lỗi, vui lòng nhấn (Không đăng nhập được) để được hỗ trợ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-               
+            {          
+               MessageBox.Show("Sai tài khoản hoặc pass lỗi, vui lòng nhấn (Không đăng nhập được) để được hỗ trợ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);          
             }
 
         }
