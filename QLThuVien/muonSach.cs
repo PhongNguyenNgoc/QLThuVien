@@ -42,8 +42,6 @@ namespace QLThuVien
             Sdr.Close();
             con.Close();
             //------------------------------
-
-
         }
 
         private void btnEnter_Click(object sender, EventArgs e)
@@ -59,7 +57,7 @@ namespace QLThuVien
 
 
                 //Code dem so sach duoc muon boi sinh vien
-                cmd.CommandText = "SELECT COUNT(MSSV) FROM dbo.MuonSach WHERE MSSV="+mssv+"";
+                cmd.CommandText = "SELECT COUNT(MSSV) FROM dbo.MuonSach WHERE MSSV="+mssv+" and ngayTra is null";
                 SqlDataAdapter DA1 = new SqlDataAdapter(cmd);
                 DataSet DS1 = new DataSet();
                 DA1.Fill(DS1);
@@ -105,11 +103,11 @@ namespace QLThuVien
                     String KhoaHoc = txtKhoaHoc.Text;
                     String Nganh = txtNganh.Text;
                     String sachMuon = cbSachMuon.Text;
-                   
+                 
                     //lay ngay hien tai lam ngay muon
                     DateTime homNay = DateTime.Now;
                     String ngayMuon = homNay.ToLongDateString();
-                    String ngayTra = dtpNgayTra.Text;
+                   
 
 
                     SqlConnection con = new SqlConnection();
@@ -118,11 +116,11 @@ namespace QLThuVien
                     cmd.Connection = con;
 
                     con.Open();
-                    cmd.CommandText = "INSERT INTO dbo.MuonSach(MSSV,HoTen,Lop,KhoaHoc,Nganh,SachMuon,ngayMuon,ngayTra) VALUES  ( "+mssv+",N'"+HoTen+"','"+Lop+"','"+KhoaHoc+"' , N'"+Nganh+"' ,N'"+sachMuon+"', '"+ngayMuon+"', '"+ngayTra+"' )";
+                    cmd.CommandText = "INSERT INTO dbo.MuonSach(MSSV,HoTen,Lop,KhoaHoc,Nganh,SachMuon,ngayMuon) VALUES  ( "+mssv+",N'"+HoTen+"','"+Lop+"','"+KhoaHoc+"' , N'"+Nganh+"' ,N'"+sachMuon+"', '"+ngayMuon+"')";
                     cmd.ExecuteNonQuery();
                     con.Close();
 
-                    MessageBox.Show("Mượn sách thành công", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Mượn sách thành công", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
                 else

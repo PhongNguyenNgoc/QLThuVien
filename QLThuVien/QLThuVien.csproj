@@ -76,6 +76,12 @@
     <Compile Include="themSinhVien.Designer.cs">
       <DependentUpon>themSinhVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="TraSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraSach.Designer.cs">
+      <DependentUpon>TraSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="xemSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="themSinhVien.resx">
       <DependentUpon>themSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraSach.resx">
+      <DependentUpon>TraSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="xemSach.resx">
       <DependentUpon>xemSach.cs</DependentUpon>

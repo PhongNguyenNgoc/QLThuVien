@@ -67,6 +67,12 @@ namespace QLThuVien
             muonSach ms = new muonSach();
             ms.Show();
         }
+
+        private void trảSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TraSach ts = new TraSach();
+            ts.Show();
+        }
        
     }
 }

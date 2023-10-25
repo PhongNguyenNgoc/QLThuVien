@@ -45,9 +45,7 @@
             this.txtKhoaHoc = new System.Windows.Forms.TextBox();
             this.txtNganh = new System.Windows.Forms.TextBox();
             this.cbSachMuon = new System.Windows.Forms.ComboBox();
-            this.dtpNgayTra = new System.Windows.Forms.DateTimePicker();
             this.txtHoTen = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -186,9 +184,7 @@
             this.panel3.Controls.Add(this.txtKhoaHoc);
             this.panel3.Controls.Add(this.txtNganh);
             this.panel3.Controls.Add(this.cbSachMuon);
-            this.panel3.Controls.Add(this.dtpNgayTra);
             this.panel3.Controls.Add(this.txtHoTen);
-            this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label6);
@@ -251,14 +247,6 @@
             this.cbSachMuon.Size = new System.Drawing.Size(248, 24);
             this.cbSachMuon.TabIndex = 9;
             // 
-            // dtpNgayTra
-            // 
-            this.dtpNgayTra.Location = new System.Drawing.Point(238, 261);
-            this.dtpNgayTra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtpNgayTra.Name = "dtpNgayTra";
-            this.dtpNgayTra.Size = new System.Drawing.Size(248, 22);
-            this.dtpNgayTra.TabIndex = 8;
-            // 
             // txtHoTen
             // 
             this.txtHoTen.Location = new System.Drawing.Point(238, 31);
@@ -267,16 +255,6 @@
             this.txtHoTen.ReadOnly = true;
             this.txtHoTen.Size = new System.Drawing.Size(248, 22);
             this.txtHoTen.TabIndex = 7;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(47, 262);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(113, 20);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Ngày trả sách";
             // 
             // label8
             // 
@@ -388,9 +366,7 @@
         private System.Windows.Forms.TextBox txtKhoaHoc;
         private System.Windows.Forms.TextBox txtNganh;
         private System.Windows.Forms.ComboBox cbSachMuon;
-        private System.Windows.Forms.DateTimePicker dtpNgayTra;
         private System.Windows.Forms.TextBox txtHoTen;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
     }
 }

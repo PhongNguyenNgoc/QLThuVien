@@ -16,7 +16,7 @@ namespace QLThuVien
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new muonSach());
+            Application.Run(new Dashboard());
         }
     }
 }
