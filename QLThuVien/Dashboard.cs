@@ -73,6 +73,12 @@ namespace QLThuVien
             TraSach ts = new TraSach();
             ts.Show();
         }
+
+        private void lichSuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            lichSu ls = new lichSu();
+            ls.Show();
+        }
        
     }
 }

@@ -56,6 +56,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="lichSu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lichSu.Designer.cs">
+      <DependentUpon>lichSu.cs</DependentUpon>
+    </Compile>
     <Compile Include="muonSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lichSu.resx">
+      <DependentUpon>lichSu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="muonSach.resx">
       <DependentUpon>muonSach.cs</DependentUpon>

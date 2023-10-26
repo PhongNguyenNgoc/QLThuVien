@@ -149,6 +149,7 @@
             this.lichSuToolStripMenuItem.Name = "lichSuToolStripMenuItem";
             this.lichSuToolStripMenuItem.Size = new System.Drawing.Size(118, 54);
             this.lichSuToolStripMenuItem.Text = "Lịch Sử";
+            this.lichSuToolStripMenuItem.Click += new System.EventHandler(this.lichSuToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
